@@ -7,7 +7,7 @@
   "scripts": {
     "test": "node .",
     "pkg": "pkg . -t node16-win-x64",
-	"min": "uglifyjs",
+	"min": "uglifyjs index.js -m -c -o index.min.js",
 	"build": "uglifyjs index.js -m -c -o index.min.js && pkg . -t node16-win-x64"
   },
   "author": "",
