@@ -1,0 +1,22 @@
+{
+  "name": "custom-discord-rich-presence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.min.js",
+  "bin": "index.min.js",
+  "scripts": {
+    "test": "node .",
+    "pkg": "pkg . -t node16-win-x64",
+	"min": "uglifyjs",
+	"build": "uglifyjs index.js -m -c -o index.min.js && pkg . -t node16-win-x64"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "pkg": "^5.5.2",
+    "uglify-js": "^3.15.2"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
+  }
+}
